@@ -743,3 +743,9 @@ variable "recreate_missing_package" {
   type        = bool
   default     = true
 }
+
+variable "manage_deployments" {
+  description = "Whether or not to manage changes to payload attributes (e.g. source_code_hash, s3_key, s3_object_version)"
+  type        = bool
+  default     = true
+}
